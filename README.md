@@ -41,6 +41,7 @@ source install/setup.bash
 Copy code
 ros2 launch urdf_demo view_car.launch.py
 ```
+---
 
 This will:
 
@@ -65,21 +66,6 @@ If the model doesn’t appear, set the RViz Fixed Frame to base_link.
 
 ---
 
-🗂️ Project Structure
-go
-Copy code
-urdf_demo/
-│
-├── launch/
-│   └── view_car.launch.py
-│
-├── urdf/
-│   └── car_demo.urdf
-│
-├── package.xml
-└── CMakeLists.txt
-
----
 📸 Screenshots
 
 ![WhatsApp Image 2025-10-24 at 19 32 05_a3d58e51](https://github.com/user-attachments/assets/a6d5c4dd-9a9a-4e11-b09b-a77f5e9902c1)
