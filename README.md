@@ -17,21 +17,31 @@ This project is ideal for beginners learning ROS 2 Humble and URDF basics — in
 Ensure you have:
 - Ubuntu 22.04 LTS  
 - ROS 2 Humble installed  
-- colcon build tools  
+- colcon build tools
+
+---
 
 ```bash
 sudo apt update
 sudo apt install ros-humble-desktop python3-colcon-common-extensions -y
+```
+---
+
 ⚙️ Building the Workspace
-bash
+```bash
 Copy code
 cd ~/ros2_ws
 colcon build --symlink-install
 source install/setup.bash
+```
+---
+
 🚀 Launch the Car Model in RViz 2
-bash
+```bash
 Copy code
 ros2 launch urdf_demo view_car.launch.py
+```
+
 This will:
 
 Start the robot_state_publisher
@@ -39,6 +49,7 @@ Start the robot_state_publisher
 Launch RViz 2
 
 Display the car_demo.urdf model (a red body with black wheels)
+
 
 🖼️ Expected View
 Once launched, you’ll see:
@@ -51,6 +62,8 @@ Positioned on the RViz grid
 
 💡 Tip:
 If the model doesn’t appear, set the RViz Fixed Frame to base_link.
+
+---
 
 🗂️ Project Structure
 go
@@ -65,10 +78,8 @@ urdf_demo/
 │
 ├── package.xml
 └── CMakeLists.txt
-📸 Screenshots
-Add your screenshots here:
 
-scss
-Copy code
-![Car Model in RViz](screenshots/car_rviz.png)
-![URDF Structure](screenshots/urdf_structure.png)
+---
+📸 Screenshots
+
+![WhatsApp Image 2025-10-24 at 19 32 05_a3d58e51](https://github.com/user-attachments/assets/a6d5c4dd-9a9a-4e11-b09b-a77f5e9902c1)
